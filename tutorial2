@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class main {
+    public static void main(String args[]) {
+        System.out.println("enter 1 if male and 0 if female ");
+        Scanner sc = new Scanner(System.in);
+        int gender = sc.nextInt();
+        System.out.println("enter age ");
+        int age = sc.nextInt();
+        if(gender == 1 && age >= 60) {
+            System.out.println("Male and senior citizen");
+        }
+        if(gender == 0 && age >= 60) {
+            System.out.println("Female and senior citizen");
+        }
+        if(gender == 1 && age <= 60) {
+            System.out.println("male and not a senior citizen");
+        }
+        if(gender == 0 && age <= 60) {
+            System.out.println("male and not a senior citizen");
+        }
+    }
+}
