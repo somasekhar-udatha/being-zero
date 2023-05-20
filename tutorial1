@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String args[]) {
+        System.out.println("Sunday\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\n");
+        //taking input from user 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter number");
+        int a = sc.nextInt();
+        System.out.println("enter number");
+        int b = sc.nextInt();
+        System.out.println("enter number");
+        int c = sc.nextInt();
+        double avg = (double)(a+b+c)/3;
+        System.out.println("avg = ");
+        System.out.println(avg);
+        System.out.println("for upto 3 decimal places");
+        System.out.println(String.format("%.3f",avg));
+    }
+}
