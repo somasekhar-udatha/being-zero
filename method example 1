@@ -58,3 +58,24 @@ class Main {
         System.out.println(c);
     }
 }
+
+#include <stdio.h>
+
+int main()
+{
+    int a,i,j,count=1;
+    printf("enter a");
+    scanf("%d",&a);
+    printf("%d",a);
+    printf("\n");
+    for (i=1;i<=a;i++) {
+        for (j=1;j<=i;j++) {
+            printf("%d ",count);
+            count++;
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+
